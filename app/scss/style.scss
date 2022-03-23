@@ -141,6 +141,57 @@
 
 
 
+
+.footer {
+  padding-bottom: 30px;
+
+  &__social::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/decor/arrow.svg');
+    width: 58px;
+    height: 79px;
+    bottom: 31px;
+    left: 141px;
+    cursor: pointer;
+  }
+
+  &__social::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/decor/photo2.png');
+    width: 130px;
+    height: 139px;
+    bottom: 10px;
+    right: 604px;
+  }
+
+  &__social {
+    display: flex;
+    margin-left: 420px;
+  }
+
+  &__link {
+    margin-right: 82px;
+    @extend %barlow-500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $default-color;
+    text-transform: uppercase;
+    transition: color 0.5s;
+    z-index: 10;
+  }
+
+  &__link:hover {
+    color: #B4977B;
+  }
+}
+
+
+
+
+
+
 @import 'media';
 
   
